@@ -1,0 +1,307 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ERPModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Antenna">
+    <Key>
+      <PropertyRef Name="AntennaID" />
+    </Key>
+    <Property Name="AntennaID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TxPower" Type="decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="RxPower" Type="decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="AntennaNumber" Type="int" Nullable="false" />
+    <Property Name="ReaderID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Barcode">
+    <Key>
+      <PropertyRef Name="BarcodeID" />
+    </Key>
+    <Property Name="BarcodeID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="BarcodeNumber" Type="varchar" MaxLength="200" Nullable="false" />
+  </EntityType>
+  <EntityType Name="BookOut">
+    <Key>
+      <PropertyRef Name="BookOutID" />
+    </Key>
+    <Property Name="BookOutID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Reason" Type="varchar" MaxLength="300" Nullable="false" />
+    <Property Name="Project" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="Date" Type="datetime" Nullable="false" />
+    <Property Name="UserID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="BookOutItem">
+    <Key>
+      <PropertyRef Name="BookOutItemID" />
+    </Key>
+    <Property Name="BookOutItemID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Quantity" Type="int" Nullable="false" />
+    <Property Name="BookOutID" Type="int" Nullable="false" />
+    <Property Name="ItemID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Brand">
+    <Key>
+      <PropertyRef Name="BrandID" />
+    </Key>
+    <Property Name="BrandID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="BrandName" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="BrandDescription" Type="varchar" MaxLength="300" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Category">
+    <Key>
+      <PropertyRef Name="CategoryID" />
+    </Key>
+    <Property Name="CategoryID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CategoryName" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="CategoryDescription" Type="varchar" MaxLength="300" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Item">
+    <Key>
+      <PropertyRef Name="ItemID" />
+    </Key>
+    <Property Name="ItemID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ItemName" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="ItemDescription" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="ItemStatus" Type="bit" Nullable="false" />
+    <Property Name="TagID" Type="int" Nullable="false" />
+    <Property Name="BarcodeID" Type="int" Nullable="false" />
+    <Property Name="BrandID" Type="int" Nullable="false" />
+    <Property Name="CategoryID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Reader">
+    <Key>
+      <PropertyRef Name="ReaderID" />
+    </Key>
+    <Property Name="ReaderID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IPaddress" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="NumAntennas" Type="int" Nullable="false" />
+    <Property Name="StoreID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Stock">
+    <Key>
+      <PropertyRef Name="StockID" />
+    </Key>
+    <Property Name="StockID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Quantity" Type="int" Nullable="false" />
+    <Property Name="ItemID" Type="int" Nullable="false" />
+    <Property Name="StoreID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Store">
+    <Key>
+      <PropertyRef Name="StoreID" />
+    </Key>
+    <Property Name="StoreID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="StoreName" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="StoreLocation" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="ItemStatus" Type="bit" Nullable="false" />
+    <Property Name="TagID" Type="int" Nullable="false" />
+    <Property Name="BarcodeID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Tag">
+    <Key>
+      <PropertyRef Name="TagID" />
+    </Key>
+    <Property Name="TagID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EPC" Type="varchar" MaxLength="200" Nullable="false" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="UserID" />
+    </Key>
+    <Property Name="UserID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserIdentityNumber" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="UserName" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="UserSurname" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="UserEmail" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="UserPassword" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="UserAdmin" Type="bit" Nullable="false" />
+    <Property Name="UserActivated" Type="bit" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_AntennaReader">
+    <End Role="Reader" Type="Self.Reader" Multiplicity="1" />
+    <End Role="Antenna" Type="Self.Antenna" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Reader">
+        <PropertyRef Name="ReaderID" />
+      </Principal>
+      <Dependent Role="Antenna">
+        <PropertyRef Name="ReaderID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BookOut_Item">
+    <End Role="BookOut" Type="Self.BookOut" Multiplicity="1" />
+    <End Role="BookOutItem" Type="Self.BookOutItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BookOut">
+        <PropertyRef Name="BookOutID" />
+      </Principal>
+      <Dependent Role="BookOutItem">
+        <PropertyRef Name="BookOutID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BookOutItem_Item">
+    <End Role="Item" Type="Self.Item" Multiplicity="1" />
+    <End Role="BookOutItem" Type="Self.BookOutItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Item">
+        <PropertyRef Name="ItemID" />
+      </Principal>
+      <Dependent Role="BookOutItem">
+        <PropertyRef Name="ItemID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BookOutUSer">
+    <End Role="User" Type="Self.User" Multiplicity="1" />
+    <End Role="BookOut" Type="Self.BookOut" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="BookOut">
+        <PropertyRef Name="UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ItemBarcode">
+    <End Role="Barcode" Type="Self.Barcode" Multiplicity="1" />
+    <End Role="Item" Type="Self.Item" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Barcode">
+        <PropertyRef Name="BarcodeID" />
+      </Principal>
+      <Dependent Role="Item">
+        <PropertyRef Name="BarcodeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ItemBrand">
+    <End Role="Brand" Type="Self.Brand" Multiplicity="1" />
+    <End Role="Item" Type="Self.Item" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Brand">
+        <PropertyRef Name="BrandID" />
+      </Principal>
+      <Dependent Role="Item">
+        <PropertyRef Name="BrandID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ItemCategory">
+    <End Role="Category" Type="Self.Category" Multiplicity="1" />
+    <End Role="Item" Type="Self.Item" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Category">
+        <PropertyRef Name="CategoryID" />
+      </Principal>
+      <Dependent Role="Item">
+        <PropertyRef Name="CategoryID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ItemTag">
+    <End Role="Tag" Type="Self.Tag" Multiplicity="1" />
+    <End Role="Item" Type="Self.Item" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tag">
+        <PropertyRef Name="TagID" />
+      </Principal>
+      <Dependent Role="Item">
+        <PropertyRef Name="TagID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ReaderStore">
+    <End Role="Store" Type="Self.Store" Multiplicity="1" />
+    <End Role="Reader" Type="Self.Reader" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Store">
+        <PropertyRef Name="StoreID" />
+      </Principal>
+      <Dependent Role="Reader">
+        <PropertyRef Name="StoreID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_StockItem">
+    <End Role="Item" Type="Self.Item" Multiplicity="1" />
+    <End Role="Stock" Type="Self.Stock" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Item">
+        <PropertyRef Name="ItemID" />
+      </Principal>
+      <Dependent Role="Stock">
+        <PropertyRef Name="ItemID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_StockStore">
+    <End Role="Store" Type="Self.Store" Multiplicity="1" />
+    <End Role="Stock" Type="Self.Stock" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Store">
+        <PropertyRef Name="StoreID" />
+      </Principal>
+      <Dependent Role="Stock">
+        <PropertyRef Name="StoreID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="ERPModelStoreContainer">
+    <EntitySet Name="Antenna" EntityType="Self.Antenna" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Barcode" EntityType="Self.Barcode" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="BookOut" EntityType="Self.BookOut" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="BookOutItem" EntityType="Self.BookOutItem" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Brand" EntityType="Self.Brand" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Category" EntityType="Self.Category" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Item" EntityType="Self.Item" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Reader" EntityType="Self.Reader" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Stock" EntityType="Self.Stock" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Store" EntityType="Self.Store" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Tag" EntityType="Self.Tag" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="User" EntityType="Self.User" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_AntennaReader" Association="Self.FK_AntennaReader">
+      <End Role="Reader" EntitySet="Reader" />
+      <End Role="Antenna" EntitySet="Antenna" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BookOut_Item" Association="Self.FK_BookOut_Item">
+      <End Role="BookOut" EntitySet="BookOut" />
+      <End Role="BookOutItem" EntitySet="BookOutItem" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BookOutItem_Item" Association="Self.FK_BookOutItem_Item">
+      <End Role="Item" EntitySet="Item" />
+      <End Role="BookOutItem" EntitySet="BookOutItem" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BookOutUSer" Association="Self.FK_BookOutUSer">
+      <End Role="User" EntitySet="User" />
+      <End Role="BookOut" EntitySet="BookOut" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ItemBarcode" Association="Self.FK_ItemBarcode">
+      <End Role="Barcode" EntitySet="Barcode" />
+      <End Role="Item" EntitySet="Item" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ItemBrand" Association="Self.FK_ItemBrand">
+      <End Role="Brand" EntitySet="Brand" />
+      <End Role="Item" EntitySet="Item" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ItemCategory" Association="Self.FK_ItemCategory">
+      <End Role="Category" EntitySet="Category" />
+      <End Role="Item" EntitySet="Item" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ItemTag" Association="Self.FK_ItemTag">
+      <End Role="Tag" EntitySet="Tag" />
+      <End Role="Item" EntitySet="Item" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ReaderStore" Association="Self.FK_ReaderStore">
+      <End Role="Store" EntitySet="Store" />
+      <End Role="Reader" EntitySet="Reader" />
+    </AssociationSet>
+    <AssociationSet Name="FK_StockItem" Association="Self.FK_StockItem">
+      <End Role="Item" EntitySet="Item" />
+      <End Role="Stock" EntitySet="Stock" />
+    </AssociationSet>
+    <AssociationSet Name="FK_StockStore" Association="Self.FK_StockStore">
+      <End Role="Store" EntitySet="Store" />
+      <End Role="Stock" EntitySet="Stock" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

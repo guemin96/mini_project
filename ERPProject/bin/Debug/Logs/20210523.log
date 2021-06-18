@@ -1,0 +1,75 @@
+[2021/05/23 13:19:13.124] [TID:1] [Info]: guemin12@naver.com 접속성공
+[2021/05/23 14:54:49.562] [TID:1] [Info]: guemin12@naver.com 접속성공
+[2021/05/23 15:01:47.040] [TID:1] [Info]: guemin12@naver.com 접속성공
+[2021/05/23 15:05:40.730] [TID:1] [Info]: guemin12@naver.com 접속성공
+[2021/05/23 15:09:25.936] [TID:1] [Info]: guemin12@naver.com 접속성공
+[2021/05/23 15:12:07.093] [TID:1] [Info]: guemin12@naver.com 접속성공
+[2021/05/23 15:23:21.550] [TID:1] [Info]: guemin12@naver.com 접속성공
+[2021/05/23 15:25:15.062] [TID:1] [Info]: guemin12@naver.com 접속성공
+[2021/05/23 15:25:28.519] [TID:1] [Warn]: 아이디/패스워드가 불일치
+[2021/05/23 15:25:29.271] [TID:1] [Warn]: 아이디/패스워드가 불일치
+[2021/05/23 15:25:30.330] [TID:1] [Warn]: 아이디/패스워드가 불일치
+[2021/05/23 15:25:31.001] [TID:1] [Info]: guemin12@naver.com 접속성공
+[2021/05/23 15:25:46.664] [TID:1] [Info]: guemin12@naver.com 접속성공
+[2021/05/23 15:25:57.565] [TID:1] [Info]: 프로그램 종료
+[2021/05/23 15:39:02.279] [TID:1] [Info]: guemin12@naver.com 접속성공
+[2021/05/23 16:13:04.235] [TID:1] [Info]: guemin12@naver.com 접속성공
+[2021/05/23 16:13:17.083] [TID:1] [Info]: guemin12@naver.com 접속성공
+[2021/05/23 16:20:34.192] [TID:1] [Info]: guemin12@naver.com 접속성공
+[2021/05/23 16:22:27.196] [TID:1] [Warn]: 아이디/패스워드가 불일치
+[2021/05/23 16:22:27.850] [TID:1] [Warn]: 아이디/패스워드가 불일치
+[2021/05/23 16:22:29.340] [TID:1] [Warn]: 아이디/패스워드가 불일치
+[2021/05/23 16:22:30.235] [TID:1] [Warn]: 아이디/패스워드가 불일치
+[2021/05/23 16:22:30.444] [TID:1] [Warn]: 아이디/패스워드가 불일치
+[2021/05/23 16:22:31.517] [TID:1] [Warn]: 아이디/패스워드가 불일치
+[2021/05/23 16:22:32.227] [TID:1] [Warn]: 아이디/패스워드가 불일치
+[2021/05/23 16:22:32.379] [TID:1] [Warn]: 아이디/패스워드가 불일치
+[2021/05/23 16:25:51.653] [TID:1] [Info]: guemin12@naver.com 접속성공
+[2021/05/23 16:28:23.217] [TID:1] [Error]: 예외발생 : System.NullReferenceException: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+   위치: ERPProject.Commons.GetMd5Hash(MD5 md5Hash, String plainStr) 파일 D:\GitRepository\ParkProject\ERPProject\Helper\Commons.cs:줄 20
+   위치: ERPProject.View.LoginView.<BtnLogin_Click>d__5.MoveNext() 파일 D:\GitRepository\ParkProject\ERPProject\View\LoginView.xaml.cs:줄 92
+[2021/05/23 16:28:32.171] [TID:1] [Error]: 예외발생 : System.NullReferenceException: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+   위치: ERPProject.Commons.GetMd5Hash(MD5 md5Hash, String plainStr) 파일 D:\GitRepository\ParkProject\ERPProject\Helper\Commons.cs:줄 20
+   위치: ERPProject.View.LoginView.<BtnLogin_Click>d__5.MoveNext() 파일 D:\GitRepository\ParkProject\ERPProject\View\LoginView.xaml.cs:줄 92
+[2021/05/23 16:28:37.096] [TID:1] [Info]: 프로그램 종료
+[2021/05/23 16:33:26.535] [TID:1] [Info]: guemin12@naver.com 접속성공
+[2021/05/23 16:47:35.030] [TID:1] [Info]: guemin12@naver.com 접속성공
+[2021/05/23 16:52:21.213] [TID:1] [Info]: guemin12@naver.com 접속성공
+[2021/05/23 16:53:21.242] [TID:1] [Warn]: 아이디/패스워드가 불일치
+[2021/05/23 16:53:22.462] [TID:1] [Info]: guemin12@naver.com 접속성공
+[2021/05/23 16:57:09.774] [TID:1] [Info]: guemin12@naver.com 접속성공
+[2021/05/23 17:15:28.396] [TID:1] [Info]: guemin12@naver.com 접속성공
+[2021/05/23 17:29:09.553] [TID:1] [Info]: guemin12@naver.com 접속성공
+[2021/05/23 17:30:42.174] [TID:1] [Info]: guemin12@naver.com 접속성공
+[2021/05/23 17:37:48.887] [TID:1] [Warn]: 아이디/패스워드가 불일치
+[2021/05/23 17:37:50.852] [TID:1] [Info]: guemin12@naver.com 접속성공
+[2021/05/23 17:37:59.627] [TID:1] [Info]: 프로그램 종료
+[2021/05/23 17:39:52.343] [TID:1] [Info]: guemin12@naver.com 접속성공
+[2021/05/23 17:41:30.134] [TID:1] [Info]: guemin12@naver.com 접속성공
+[2021/05/23 17:43:36.227] [TID:1] [Info]: guemin12@naver.com 접속성공
+[2021/05/23 17:46:04.421] [TID:1] [Info]: guemin12@naver.com 접속성공
+[2021/05/23 17:46:31.606] [TID:1] [Info]: guemin12@naver.com 접속성공
+[2021/05/23 17:49:26.507] [TID:1] [Info]: guemin12@naver.com 접속성공
+[2021/05/23 19:06:16.395] [TID:1] [Info]: guemin12@naver.com 접속성공
+[2021/05/23 19:26:03.937] [TID:1] [Info]: guemin12@naver.com 접속성공
+[2021/05/23 19:27:02.990] [TID:1] [Info]: guemin12@naver.com 접속성공
+[2021/05/23 19:42:54.194] [TID:1] [Info]: guemin12@naver.com 접속성공
+[2021/05/23 19:45:17.784] [TID:1] [Info]: guemin12@naver.com 접속성공
+[2021/05/23 20:02:48.694] [TID:1] [Info]: guemin12@naver.com 접속성공
+[2021/05/23 20:02:56.464] [TID:1] [Error]: 예외발생 BtnExportPdf_Click : System.IO.IOException: D:\GitRepository\ParkProject\ERPProject\bin\Debug\NanumGothic.ttf not found as file or resource.
+   위치: iTextSharp.text.io.RandomAccessSourceFactory.CreateByReadingToMemory(String filename)
+   위치: iTextSharp.text.io.RandomAccessSourceFactory.CreateBestSource(String filename)
+   위치: iTextSharp.text.pdf.TrueTypeFont.Process(Byte[] ttfAfm, Boolean preload)
+   위치: iTextSharp.text.pdf.TrueTypeFontUnicode..ctor(String ttFile, String enc, Boolean emb, Byte[] ttfAfm, Boolean forceRead)
+   위치: iTextSharp.text.pdf.BaseFont.CreateFont(String name, String encoding, Boolean embedded, Boolean cached, Byte[] ttfAfm, Byte[] pfb, Boolean noThrow, Boolean forceRead)
+   위치: iTextSharp.text.pdf.BaseFont.CreateFont(String name, String encoding, Boolean embedded)
+   위치: ERPProject.View.User.UserList.BtnExportPdf_Click(Object sender, RoutedEventArgs e) 파일 D:\GitRepository\ParkProject\ERPProject\View\User\UserList.xaml.cs:줄 92
+[2021/05/23 20:03:15.012] [TID:1] [Error]: 예외발생 BtnExportPdf_Click : System.IO.IOException: D:\GitRepository\ParkProject\ERPProject\bin\Debug\NanumGothic.ttf not found as file or resource.
+   위치: iTextSharp.text.io.RandomAccessSourceFactory.CreateByReadingToMemory(String filename)
+   위치: iTextSharp.text.io.RandomAccessSourceFactory.CreateBestSource(String filename)
+   위치: iTextSharp.text.pdf.TrueTypeFont.Process(Byte[] ttfAfm, Boolean preload)
+   위치: iTextSharp.text.pdf.TrueTypeFontUnicode..ctor(String ttFile, String enc, Boolean emb, Byte[] ttfAfm, Boolean forceRead)
+   위치: iTextSharp.text.pdf.BaseFont.CreateFont(String name, String encoding, Boolean embedded, Boolean cached, Byte[] ttfAfm, Byte[] pfb, Boolean noThrow, Boolean forceRead)
+   위치: iTextSharp.text.pdf.BaseFont.CreateFont(String name, String encoding, Boolean embedded)
+   위치: ERPProject.View.User.UserList.BtnExportPdf_Click(Object sender, RoutedEventArgs e) 파일 D:\GitRepository\ParkProject\ERPProject\View\User\UserList.xaml.cs:줄 92
+[2021/05/23 20:09:02.275] [TID:1] [Info]: guemin12@naver.com 접속성공
