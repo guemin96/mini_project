@@ -147,6 +147,14 @@ namespace ERPProject.Logic
                 return ctx.SaveChanges(); //
             }
         }
+        public static int Setbookoutitem(BookOutItem bookOutItem)
+        {
+            using (var ctx = new ERPEntities())
+            {
+                ctx.BookOutItem.AddOrUpdate(bookOutItem);
+                return ctx.SaveChanges(); //
+            }
+        }
         public static int SetItems(Item item)
         {
             using (var ctx = new ERPEntities())
