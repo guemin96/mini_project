@@ -26,9 +26,14 @@ namespace ERPProject.View.Stock
             try
             {
                 List<Model.Stock> stocks = new List<Model.Stock>();
-                stocks = Logic.DataAccess.Getstock();
+                stocks = Logic.DataAccess.GetStocks();
+                
 
                 this.DataContext = stocks;
+                //var productname = Logic.DataAccess.Getitems().Where(i => i.ItemID.Equals());
+                //this.DataContext = stocks;
+                //진짜 ㄹㅇ 모르겟다. where(i=>i.itemID.Equals,contain 등등 )다 써봤는데 모르겟다.
+
             }
             catch (Exception ex)
             {

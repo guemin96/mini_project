@@ -96,7 +96,10 @@
                 <DataGrid.Columns>
                     <DataGridTextColumn Binding="{Binding StockID}" Header="순번" Width="60" IsReadOnly="True"/>
                     <DataGridTextColumn Binding="{Binding Quantity}" Header="제품수량" Width="120" IsReadOnly="True"/>
-                    <DataGridTextColumn Binding="{Binding ItemID}" Header="제품이름" Width="1*" IsReadOnly="True"/>
+                    <!--<DataGridComboBoxColumn x:Name="CboItemName"></DataGridComboBoxColumn>-->
+                    <DataGridTextColumn x:Name="TxtItemName" 
+                                        
+                                        Binding="{Binding productname.ItemName}" Header="제품이름" Width="1*" IsReadOnly="True"/>
                     <DataGridTextColumn Binding="{Binding StoreID}" Header="창고번호" Width="1*" IsReadOnly="True"/>
                 </DataGrid.Columns>
 
