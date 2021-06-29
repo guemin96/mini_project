@@ -80,6 +80,20 @@ namespace ERPProject.Logic
             }
             return stores;
         }
+        // Stock과 Item의 DB를 연결시켜주는 함수
+        //public static List<Stock> GetAllStocks()
+        //{
+        //    List<Stock> stocks;
+
+        //    using (var ctx = new ERPEntities())
+        //    {
+        //        stocks = (from a in ctx.Stock
+        //                 join b in ctx.Item
+        //                 on a.ItemID equals b.ItemID
+        //                 select a).ToList();
+        //    }
+        //    return stocks;
+        //}
         public static List<Stock> GetStocks()
         {
             List<Stock> stocks;

@@ -27,13 +27,17 @@ namespace ERPProject.View.Stock
             {
                 List<Model.Stock> stocks = new List<Model.Stock>();
                 stocks = Logic.DataAccess.GetStocks();
-                
-
                 this.DataContext = stocks;
                 //var productname = Logic.DataAccess.Getitems().Where(i => i.ItemID.Equals());
                 //this.DataContext = stocks;
                 //진짜 ㄹㅇ 모르겟다. where(i=>i.itemID.Equals,contain 등등 )다 써봤는데 모르겟다.
-
+                //=> 선생님의 해답! 어제 분명히 해본 것 같은데 시도할때는 확신을 가지고 코딩하기...
+                //   이 부분을 잘하기 위해서는 디비공부를 다시 하기
+                //데이터 그리드내에서 다른 테이블의 데이터를 들고 올때 사용하는 식!!
+                var items = Logic.DataAccess.Getitems();
+                CboItemName.ItemsSource = items;
+                //
+               
             }
             catch (Exception ex)
             {

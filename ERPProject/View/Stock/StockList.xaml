@@ -97,9 +97,16 @@
                     <DataGridTextColumn Binding="{Binding StockID}" Header="순번" Width="60" IsReadOnly="True"/>
                     <DataGridTextColumn Binding="{Binding Quantity}" Header="제품수량" Width="120" IsReadOnly="True"/>
                     <!--<DataGridComboBoxColumn x:Name="CboItemName"></DataGridComboBoxColumn>-->
+                    <!--다른 테이블에서 데이터를 들고 올때는 콤보박스로 설정한 뒤 들고 오는 것이 좋음-->
+                    <DataGridComboBoxColumn x:Name="CboItemName"
+                                            DisplayMemberPath="ItemName"
+                                            SelectedValuePath="ItemID"
+                                            SelectedValueBinding="{Binding ItemID}"
+                                            Header="제품이름">
+                    </DataGridComboBoxColumn>
                     <DataGridTextColumn x:Name="TxtItemName" 
                                         
-                                        Binding="{Binding productname.ItemName}" Header="제품이름" Width="1*" IsReadOnly="True"/>
+                                        Binding="{Binding ItemID}" Header="제품이름" Width="1*" IsReadOnly="True"/>
                     <DataGridTextColumn Binding="{Binding StoreID}" Header="창고번호" Width="1*" IsReadOnly="True"/>
                 </DataGrid.Columns>
 
