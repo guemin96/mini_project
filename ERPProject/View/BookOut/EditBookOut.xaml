@@ -38,7 +38,7 @@
             <ColumnDefinition Width="210"/>
         </Grid.ColumnDefinitions>
 
-        <Label Grid.Row="0" Grid.Column="1" Content="입고 제품 입력" FontSize="30" FontWeight="ExtraBold"
+        <Label Grid.Row="0" Grid.Column="1" Content="출고 제품 입력" FontSize="30" FontWeight="ExtraBold"
                VerticalContentAlignment="Center"/>
 
         <!--제목입력 끝-->
@@ -62,7 +62,6 @@
             <Label Grid.Row="0" Grid.Column="0" Content="순번" />
             <Label Grid.Row="1" Grid.Column="0" Content="제품수량" />
             <Label Grid.Row="2" Grid.Column="0" Content="제품번호" />
-            <Label Grid.Row="3" Grid.Column="0" Content="창고번호" />
 
             <!--이것 역시 위에서 스타일을 지정해뒀기 바로 적용이된다(18번줄 참고)-->
             <TextBlock Grid.Row="0" Grid.Column="1" x:Name="TxtStockID" Text="StockID"/>
@@ -80,11 +79,7 @@
                 </ComboBox>
                 <TextBlock x:Name="LblItemID" Text="ErrorMessage" Foreground="OrangeRed"/>
             </StackPanel>
-            <StackPanel Grid.Row="3" Grid.Column="1" Orientation="Horizontal">
-                <ComboBox x:Name="CboStoreID" Margin="3" Width="200" 
-                         Text="" FontSize="14" />
-                <TextBlock x:Name="LblStoreID" Text="ErrorMessage" Foreground="OrangeRed"/>
-            </StackPanel>
+            <StackPanel Grid.Row="3" Grid.Column="1" Orientation="Horizontal"/>
         </Grid>
         <!--컨텐츠영역 끝 -->
 

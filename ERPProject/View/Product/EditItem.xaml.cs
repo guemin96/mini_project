@@ -61,7 +61,7 @@ namespace ERPProject.View.Product
             catch (Exception ex)
             {
                 Commons.LOGGER.Error($"예외발생 MyAccount Loaded : {ex}");
-                // Commons.ShowMessageAsync("예외", $"예외발생 : {ex}");
+                Commons.ShowMessageAsync("예외", $"예외발생 : {ex}");
             }
         }
 

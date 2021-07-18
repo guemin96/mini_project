@@ -200,6 +200,12 @@
     <Compile Include="View\BookOut\AddBookOut.xaml.cs">
       <DependentUpon>AddBookOut.xaml</DependentUpon>
     </Compile>
+    <Compile Include="View\Product\AddCategory.xaml.cs">
+      <DependentUpon>AddCategory.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Product\AddBrand.xaml.cs">
+      <DependentUpon>AddBrand.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\Stock\EditStock.xaml.cs">
       <DependentUpon>EditStock.xaml</DependentUpon>
     </Compile>
@@ -270,6 +276,14 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="View\BookOut\AddBookOut.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Product\AddCategory.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Product\AddBrand.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>

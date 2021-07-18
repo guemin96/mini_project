@@ -15,21 +15,44 @@ namespace ERPProject.View.BookOut
     /// </summary>
     public partial class EditBookOut : Page
     {
+        private int ItemID { get; set; }
+
+        private Model.BookOutItem CurrentItem { get; set; }
+        private Model.Stock CurrentStock { get; set; }
+
         public EditBookOut()
         {
             InitializeComponent();
+        }
+        public EditBookOut(int itemID) : this()//위에 initializeComponent를 상속받기 때문에 꼭 this()를 넣어줘야한다.
+        {
+            ItemID = itemID;
         }
 
 
 
         private void Page_Loaded(object sender, RoutedEventArgs e)
         {
+            LblItemQuantity.Visibility = LblItemID.Visibility = Visibility.Hidden;
+
             try
             {
-                LblStoreID.Visibility = LblItemQuantity.Visibility = LblItemID.Visibility = Visibility.Hidden;
+                CurrentItem = Logic.DataAccess.GetbookOutItems().Where(b => b.ItemID.Equals(ItemID)).FirstOrDefault();
+                CurrentStock = Logic.DataAccess.GetStocks().Where(s => s.StockID.Equals(TxtStockID)).FirstOrDefault();
+
 
                 List<Model.BookOutItem> bookOutItems = new List<Model.BookOutItem>();
                 bookOutItems = Logic.DataAccess.GetbookOutItems();
+
+                List<int> itemIDs = new List<int>()
+                {
+                    CurrentItem.ItemID
+                };
+                
+
+                TxtItemQuantity.Text = CurrentItem.Quantity.ToString();
+                CboItemID.ItemsSource = itemIDs;
+                //CboStoreID.ItemsSource = stockIDs;
 
                 this.DataContext = bookOutItems;
             }

@@ -292,7 +292,6 @@ D:\GitRepository2\mini_project\ERPProject\bin\Debug\Microsoft.Xaml.Behaviors.pdb
 D:\GitRepository2\mini_project\ERPProject\bin\Debug\Microsoft.Xaml.Behaviors.xml
 D:\GitRepository2\mini_project\ERPProject\bin\Debug\NLog.xml
 D:\GitRepository2\mini_project\ERPProject\bin\Debug\de\MahApps.Metro.resources.dll
-D:\GitRepository2\mini_project\ERPProject\obj\Debug\ERPProject.csprojAssemblyReference.cache
 D:\GitRepository2\mini_project\ERPProject\obj\Debug\MainWindow.g.cs
 D:\GitRepository2\mini_project\ERPProject\obj\Debug\View\Account\EditAccount.g.cs
 D:\GitRepository2\mini_project\ERPProject\obj\Debug\View\BookOut\EditBookOut.g.cs
@@ -346,3 +345,8 @@ D:\GitRepository2\mini_project\ERPProject\obj\Debug\ERPProject.csproj.CoreCompil
 D:\GitRepository2\mini_project\ERPProject\obj\Debug\ERPProject.csproj.CopyComplete
 D:\GitRepository2\mini_project\ERPProject\obj\Debug\ERPProject.exe
 D:\GitRepository2\mini_project\ERPProject\obj\Debug\ERPProject.pdb
+D:\GitRepository2\mini_project\ERPProject\obj\Debug\ERPProject.csproj.AssemblyReference.cache
+D:\GitRepository2\mini_project\ERPProject\obj\Debug\View\Product\AddBrand.g.cs
+D:\GitRepository2\mini_project\ERPProject\obj\Debug\View\Product\AddBrand.baml
+D:\GitRepository2\mini_project\ERPProject\obj\Debug\View\Product\AddCategory.g.cs
+D:\GitRepository2\mini_project\ERPProject\obj\Debug\View\Product\AddCategory.baml

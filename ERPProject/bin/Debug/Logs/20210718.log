@@ -1,0 +1,43 @@
+[2021/07/18 18:49:44.358] [TID:1] [Info]: guemin12@naver.com 접속성공
+[2021/07/18 18:50:05.494] [TID:1] [Error]: 예외발생 BtnEditStore_Click : System.NullReferenceException: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+   위치: ERPProject.View.BookOut.BookOutList.BtnEditItem_Click(Object sender, RoutedEventArgs e) 파일 D:\GitRepository2\mini_project\ERPProject\View\BookOut\BookOutList.xaml.cs:줄 63
+[2021/07/18 18:57:09.492] [TID:1] [Info]: guemin12@naver.com 접속성공
+[2021/07/18 19:02:16.766] [TID:1] [Info]: guemin12@naver.com 접속성공
+[2021/07/18 19:02:26.232] [TID:1] [Error]: 예외발생 BtnEditStore_Click : System.NullReferenceException: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+   위치: ERPProject.View.BookOut.BookOutList.BtnEditItem_Click(Object sender, RoutedEventArgs e) 파일 D:\GitRepository2\mini_project\ERPProject\View\BookOut\BookOutList.xaml.cs:줄 68
+[2021/07/18 19:03:53.986] [TID:1] [Info]: guemin12@naver.com 접속성공
+[2021/07/18 19:04:00.126] [TID:1] [Error]: 예외발생 BtnEditStore_Click : System.NullReferenceException: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+   위치: ERPProject.View.Stock.StockList.BtnEditItem_Click(Object sender, RoutedEventArgs e) 파일 D:\GitRepository2\mini_project\ERPProject\View\Stock\StockList.xaml.cs:줄 79
+[2021/07/18 19:04:14.018] [TID:1] [Info]: guemin12@naver.com 접속성공
+[2021/07/18 19:05:03.882] [TID:1] [Info]: guemin12@naver.com 접속성공
+[2021/07/18 19:05:08.112] [TID:1] [Error]: 예외발생 BtnEditStore_Click : System.NullReferenceException: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+   위치: ERPProject.View.BookOut.BookOutList.BtnEditItem_Click(Object sender, RoutedEventArgs e) 파일 D:\GitRepository2\mini_project\ERPProject\View\BookOut\BookOutList.xaml.cs:줄 65
+[2021/07/18 19:05:33.745] [TID:1] [Info]: guemin12@naver.com 접속성공
+[2021/07/18 19:05:35.845] [TID:1] [Error]: 예외발생 BtnEditStore_Click : System.NullReferenceException: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+   위치: ERPProject.View.BookOut.BookOutList.BtnEditItem_Click(Object sender, RoutedEventArgs e) 파일 D:\GitRepository2\mini_project\ERPProject\View\BookOut\BookOutList.xaml.cs:줄 65
+[2021/07/18 19:06:20.982] [TID:1] [Info]: guemin12@naver.com 접속성공
+[2021/07/18 19:16:36.307] [TID:1] [Info]: guemin12@naver.com 접속성공
+[2021/07/18 19:18:56.325] [TID:1] [Info]: guemin12@naver.com 접속성공
+[2021/07/18 19:19:34.114] [TID:1] [Info]: guemin12@naver.com 접속성공
+[2021/07/18 19:20:46.015] [TID:1] [Info]: guemin12@naver.com 접속성공
+[2021/07/18 19:21:49.923] [TID:1] [Info]: 프로그램 종료
+[2021/07/18 19:21:58.975] [TID:1] [Info]: guemin12@naver.com 접속성공
+[2021/07/18 19:22:37.442] [TID:1] [Info]: 프로그램 종료
+[2021/07/18 19:23:06.150] [TID:1] [Info]: guemin12@naver.com 접속성공
+[2021/07/18 19:27:45.680] [TID:1] [Info]: guemin12@naver.com 접속성공
+[2021/07/18 19:28:31.773] [TID:1] [Info]: guemin12@naver.com 접속성공
+[2021/07/18 19:30:08.721] [TID:1] [Info]: guemin12@naver.com 접속성공
+[2021/07/18 19:31:33.737] [TID:1] [Info]: guemin12@naver.com 접속성공
+[2021/07/18 19:43:14.156] [TID:1] [Info]: guemin12@naver.com 접속성공
+[2021/07/18 19:46:04.853] [TID:1] [Info]: guemin12@naver.com 접속성공
+[2021/07/18 19:53:20.863] [TID:1] [Info]: guemin12@naver.com 접속성공
+[2021/07/18 19:53:50.208] [TID:1] [Info]: guemin12@naver.com 접속성공
+[2021/07/18 19:57:00.419] [TID:1] [Info]: guemin12@naver.com 접속성공
+[2021/07/18 19:58:07.818] [TID:1] [Info]: guemin12@naver.com 접속성공
+[2021/07/18 19:58:10.606] [TID:1] [Error]: 예외발생 BookOutItemsList Loaded : System.NullReferenceException: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+   위치: ERPProject.View.BookOut.EditBookOut.Page_Loaded(Object sender, RoutedEventArgs e) 파일 D:\GitRepository2\mini_project\ERPProject\View\BookOut\EditBookOut.xaml.cs:줄 51
+[2021/07/18 19:58:35.577] [TID:1] [Info]: guemin12@naver.com 접속성공
+[2021/07/18 19:58:37.604] [TID:1] [Error]: 예외발생 BookOutItemsList Loaded : System.NullReferenceException: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+   위치: ERPProject.View.BookOut.EditBookOut.Page_Loaded(Object sender, RoutedEventArgs e) 파일 D:\GitRepository2\mini_project\ERPProject\View\BookOut\EditBookOut.xaml.cs:줄 51
+[2021/07/18 19:58:55.826] [TID:1] [Info]: guemin12@naver.com 접속성공
+[2021/07/18 20:00:53.965] [TID:1] [Info]: guemin12@naver.com 접속성공

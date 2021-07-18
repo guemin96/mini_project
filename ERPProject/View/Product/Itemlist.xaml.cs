@@ -1,8 +1,10 @@
-﻿using iTextSharp.text;
+﻿using ERPProject.Model;
+using iTextSharp.text;
 using iTextSharp.text.pdf;
 using Microsoft.Win32;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.IO;
 using System.Linq;
 using System.Windows;
@@ -16,15 +18,41 @@ namespace ERPProject.View.Product
     /// </summary>
     public partial class Itemlist : Page
     {
+        public ObservableCollection<Tag> GridTags { get; set; }
+        public ObservableCollection<Model.Barcode> GridBarcodes { get; set; }
+        public ObservableCollection<Brand> GridBrands { get; set; }
+        public ObservableCollection<Category> GridCategories { get; set; }
+
         public Itemlist()
         {
             InitializeComponent();
+
+            GridTags = new ObservableCollection<Tag>();
+            GridBarcodes = new ObservableCollection<Model.Barcode>();
+            GridBrands = new ObservableCollection<Brand>();
+            GridCategories = new ObservableCollection<Category>();
+
+            // 2021.06.10. MG Sung.
+            // DB에서 데이터가져오기
+            var tags = Logic.DataAccess.GetTags();
+            tags.ForEach(x => GridTags.Add(x));
+            var barcodes = Logic.DataAccess.GetBarcodes();
+            barcodes.ForEach(x => GridBarcodes.Add(x));
+            var brands = Logic.DataAccess.GetBrands();
+            brands.ForEach(x => GridBrands.Add(x));
+            var categories = Logic.DataAccess.GetCategories();
+            categories.ForEach(x => GridCategories.Add(x));
         }
 
         private void Page_Loaded(object sender, RoutedEventArgs e)
         {
             try
             {
+                CboRfids.ItemsSource = GridTags;
+                CboBarcode.ItemsSource = GridBarcodes;
+                CboBrands.ItemsSource = GridBrands;
+                CboCategories.ItemsSource = GridCategories;
+
                 List<Model.Item> items = new List<Model.Item>();
                 items = Logic.DataAccess.Getitems();
 
@@ -37,11 +65,37 @@ namespace ERPProject.View.Product
             }
         }
 
-        
+
 
         private void BtnExportExcel_Click(object sender, RoutedEventArgs e)
         {
 
+        }
+
+        private void BtnAddBrand_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                NavigationService.Navigate(new AddBrand());
+            }
+            catch (Exception ex)
+            {
+                Commons.LOGGER.Error($"예외발생 BtnAddBrand_Click : {ex}");
+                throw ex;
+            }
+        }
+
+        private void BtnAddCategory_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                NavigationService.Navigate(new AddCategory());
+            }
+            catch (Exception ex)
+            {
+                Commons.LOGGER.Error($"예외발생 BtnAddCategory_Click : {ex}");
+                throw ex;
+            }
         }
 
         private void BtnAddItem_Click(object sender, RoutedEventArgs e)

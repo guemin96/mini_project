@@ -120,5 +120,57 @@ namespace ERPProject.Logic
                 return ctx.SaveChanges(); //
             }
         }
+        public static int SetBrand(Brand item) //data를 수정할 때 
+        {
+            using (var ctx = new ERPEntities())
+            {
+                ctx.Brand.AddOrUpdate(item);
+                return ctx.SaveChanges(); //commit
+            }
+        }
+        public static List<Brand> GetBrands()
+        {
+            List<Brand> brands;
+
+            using (var ctx = new ERPEntities())
+                brands = ctx.Brand.ToList();
+
+            return brands;
+        }
+        public static int SetCategory(Category item)
+        {
+            using (var ctx = new ERPEntities())
+            {
+                ctx.Category.AddOrUpdate(item);
+                return ctx.SaveChanges(); //commit
+            }
+        }
+        public static List<Category> GetCategories()
+        {
+            List<Category> categories;
+
+            using (var ctx = new ERPEntities())
+                categories = ctx.Category.ToList();
+
+            return categories;
+        }
+        public static List<Tag> GetTags()
+        {
+            List<Tag> tags;
+
+            using (var ctx = new ERPEntities())
+                tags = ctx.Tag.ToList();
+
+            return tags;
+        }
+        public static List<Barcode> GetBarcodes()
+        {
+            List<Barcode> barcodes;
+
+            using (var ctx = new ERPEntities())
+                barcodes = ctx.Barcode.ToList();
+
+            return barcodes;
+        }
     }
 }

@@ -15,9 +15,14 @@ namespace ERPProject.View.Stock
     /// </summary>
     public partial class EditStock : Page
     {
+        private int ItemID{ get; set; }
         public EditStock()
         {
             InitializeComponent();
+        }
+        public EditStock(int itemID) : this()
+        {
+            ItemID = itemID;
         }
 
 

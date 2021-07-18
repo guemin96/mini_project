@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 D:\GitRepository2\mini_project\ERPProject\App.xaml
-20-1605993937
+22-1595440957
 2559067253
-431512865878
+451524893045
 641178160107
-MainWindow.xaml;View\Account\EditAccount.xaml;View\BookOut\EditBookOut.xaml;View\BookOut\AddBookOut.xaml;View\Stock\EditStock.xaml;View\Stock\AddStock.xaml;View\Product\EditItem.xaml;View\Product\AddItem.xaml;View\BookOut\BookOutList.xaml;View\Stock\StockList.xaml;View\Product\Itemlist.xaml;View\Store\EditStore.xaml;View\Store\AddStore.xaml;View\Store\StoreList.xaml;View\User\DeactiveUser.xaml;View\User\EditUser.xaml;View\User\AddUser.xaml;View\User\UserList.xaml;View\Account\MyAccount.xaml;View\LoginView.xaml;
+MainWindow.xaml;View\Account\EditAccount.xaml;View\BookOut\EditBookOut.xaml;View\BookOut\AddBookOut.xaml;View\Product\AddCategory.xaml;View\Product\AddBrand.xaml;View\Stock\EditStock.xaml;View\Stock\AddStock.xaml;View\Product\EditItem.xaml;View\Product\AddItem.xaml;View\BookOut\BookOutList.xaml;View\Stock\StockList.xaml;View\Product\Itemlist.xaml;View\Store\EditStore.xaml;View\Store\AddStore.xaml;View\Store\StoreList.xaml;View\User\DeactiveUser.xaml;View\User\EditUser.xaml;View\User\AddUser.xaml;View\User\UserList.xaml;View\Account\MyAccount.xaml;View\LoginView.xaml;
 
 True
 

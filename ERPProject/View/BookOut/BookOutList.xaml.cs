@@ -16,10 +16,12 @@ namespace ERPProject.View.BookOut
     /// </summary>
     public partial class BookOutList : Page
     {
+       
         public BookOutList()
         {
             InitializeComponent();
         }
+       
 
         private void Page_Loaded(object sender, RoutedEventArgs e)
         {
@@ -41,7 +43,7 @@ namespace ERPProject.View.BookOut
         {
             try
             {
-                //NavigationService.Navigate(new AddStock());
+                NavigationService.Navigate(new AddBookOut());
             }
             catch (Exception ex)
             {
@@ -60,8 +62,8 @@ namespace ERPProject.View.BookOut
 
             try
             {
-                var itemId = (GrdData.SelectedItem as Model.Item).ItemID;
-               // NavigationService.Navigate(new EditItem(itemId));
+                var itemId = (GrdData.SelectedItem as Model.BookOutItem).ItemID;
+                NavigationService.Navigate(new EditBookOut(itemId));
             }
             catch (Exception ex)
             {

@@ -76,8 +76,8 @@ namespace ERPProject.View.Stock
 
             try
             {
-                var itemId = (GrdData.SelectedItem as Model.Item).ItemID;
-               // NavigationService.Navigate(new EditItem(itemId));
+                var itemId = (GrdData.SelectedItem as Model.Stock).ItemID;
+                NavigationService.Navigate(new EditStock(itemId));
             }
             catch (Exception ex)
             {
